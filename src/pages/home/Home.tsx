@@ -9,6 +9,7 @@ import Profil from "../../components/Directory/Profil";
 import Skill from "../../components/Directory/Skill";
 import Days from "../../components/Dash/Days";
 import Loading from "../laoding/Loading";
+import Experience from "../../components/Directory/Experience";
 export default function Home() {
   const [selectedMenu, setSelectedMenu] = useState<string>("");
 
@@ -48,6 +49,9 @@ export default function Home() {
           {selectedMenu == "Contacts" && <Contact onCloseMenu={onCloseMenu} />}
           {selectedMenu == "Profil" && <Profil onCloseMenu={onCloseMenu} />}
           {selectedMenu == "Skills" && <Skill onCloseMenu={onCloseMenu} />}
+          {selectedMenu == "Projets" && (
+            <Experience onCloseMenu={onCloseMenu} />
+          )}
           <NavbarMenu
             setSelectedMenu={setSelectedMenu}
             selectedMenu={selectedMenu}

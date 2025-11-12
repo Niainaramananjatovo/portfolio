@@ -87,10 +87,10 @@ export default function Profil({ onCloseMenu }: ProfilProps) {
           X{" "}
         </button>
       </header>
-      <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+      <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
         <h1 className="text-xl font-semibold"> {person1.nom + " "+ person1.prenom} </h1>
       </div>
-      <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+      <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
         <h2 className="border-b-1 p-2 w-full"> Age : {returnAge(person1.birthDate)} </h2>
         <h2 className="border-b-1 p-2 w-full">
           {" "}
@@ -99,7 +99,7 @@ export default function Profil({ onCloseMenu }: ProfilProps) {
         <h2 className="border-b-1 p-2 w-full"> Nationalité : {person1.nationality} </h2>
         <h2 className="p-2 w-full"> Situation Matrimoniale : {person1.situtaion} </h2>
       </div>
-      <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+      <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
         <h1 className="text-xl w-full"> Centres d'Intérêt </h1>
         {
           person1.interest && person1.interest.map((interest) => (

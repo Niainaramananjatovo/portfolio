@@ -61,13 +61,13 @@ export default function Skill({ onCloseMenu }: SkillProps) {
           X{" "}
         </button>
       </header>
-      <div className="bg-gray-50 p-3 rounded-lg w-full flex flex-col gap-2 mt-2 mb-2">
+      <div className="bg-gray-50/80 p-3 rounded-lg w-full flex flex-col gap-2 mt-2 mb-2">
         <h1 className="text-xl font-semibold">
           Junior FullStack Web developer{" "}
         </h1>
       </div>
       <div className="lg:grid lg:grid-cols-2  md:grid grid-col-1 gap-2 w-full overflow-y-auto h-[500px]">
-        <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
           <h1 className="text-xl w-full"> Front-End </h1>
           <h2> HTML & CSS </h2>
           <h2> Javascript </h2> 
@@ -76,19 +76,19 @@ export default function Skill({ onCloseMenu }: SkillProps) {
           <h2> Bootstrap </h2>
           <h2> React.js </h2>
         </div>
-        <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
           <h1 className="text-xl w-full"> Back-End </h1>
           <h2> PHP </h2>
           <h2> Laravel </h2>
           <h2> Node.js </h2>
           <h2> Express.js </h2>
         </div>
-        <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
           <h1 className="text-xl w-full"> Base de données </h1>
           <h2> MySQL </h2>
           <h2> PostgresQL </h2>
         </div>
-        <div className="bg-gray-50 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
           <h1 className="text-xl w-full"> Langues </h1>
           <h2> Malagasy (natif)  </h2> 
           <h2> Français </h2>

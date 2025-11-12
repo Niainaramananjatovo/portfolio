@@ -5,6 +5,6 @@ export default function Weather(){
        <h1 className="text-6xl font-bold">15°C</h1>
        <span className="flex flex-row items-center justify-center mt-1 mr-1">
             <MapPinIcon className="w-5 h-5"/>
-         Shanghai, Chine </span>
+         Séoul, Corée du Sud </span>
     </div>
 }
