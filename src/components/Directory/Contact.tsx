@@ -3,10 +3,11 @@ import Facebook from "../../icons/facebook.png";
 import LinkedIn from "../../icons/linkedin.png";
 import GitHub from "../../icons/github.png";
 import Gmail from "../../icons/gmail.png";
-import Tel from "../../icons/silhouette-de-poignee-de-telephone.png"; 
+import Tel from "../../icons/silhouette-de-poignee-de-telephone.png";
 
+import closed from "../../icons/cross.png";
 interface ContactProps {
-  onCloseMenu : ()=> void
+  onCloseMenu: () => void;
 }
 type Contact = {
   plateform: string;
@@ -14,7 +15,7 @@ type Contact = {
   url?: string;
 };
 
-export default function Contact({onCloseMenu} : ContactProps) {
+export default function Contact({ onCloseMenu }: ContactProps) {
   const list: Contact[] = [
     {
       plateform: "Git",
@@ -95,11 +96,15 @@ export default function Contact({onCloseMenu} : ContactProps) {
       }}
       className="bg-white rounded-2xl p-3 absolute cursor-grab"
     >
-      <header className="border-b-1 mb-2 flex flex-row justify-between w-full px-2">
-        <h1 className="text-3xl font-semibold p-2"> Contacts </h1> 
-        <button  onClick={() => {
-          onCloseMenu()
-        }}> X </button>
+      <header className="border-b-1 mb-2 flex flex-row items-center justify-between w-full px-2">
+        <h1 className="text-3xl font-semibold p-2"> Mes contacts </h1>
+        <button
+          onClick={() => {
+            onCloseMenu();
+          }}
+        >
+          <img src={closed} className="w-7 h-7" />
+        </button>
       </header>
       {list.map((contact) => (
         <section

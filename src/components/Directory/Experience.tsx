@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import CardXp from "../Experience/CardXp";
-
+import closed from "../../icons/cross.png";
 interface ExperienceProps {
   onCloseMenu: () => void;
 }
@@ -44,14 +44,16 @@ export default function Experience({ onCloseMenu }: ExperienceProps) {
 
   const lists: Projet[] = [
     {
-      nom: "Développement d' une ERP ",
+      nom: "Développement d'une ERP ",
       stack: ["React JS", "Laravel", "PostgresQL"],
-      description: "Dans le cadre du developpement d;une application ERP complete, j'ai participe a la conception et a l'integration de l'interface utilisateur a partir des Templates et Frames sur Figma.",
+      description:
+        "Dans le cadre du developpement d'une application ERP complète, j'ai participé à la conception et a l'intégration de l'interface utilisateur à partir des Templates et Frames sur Figma.",
     },
     {
       nom: "Application de sondage ",
       stack: ["PHP", "Laravel", "MySQL", "JS", "JQuery"],
-      description: "Dans le developpement d'une application de sondage pour une entreprise, j'ai contribue en tant que developpeur fullstack Laravel, en travaillant a la fois sur le Front-End et le Back-End. J'ai concu et implemente une interface utilisateur dynamique et intuitive.",
+      description:
+        "Dans le developpement d'une application de sondage pour une entreprise, j'ai contribué en tant que developpeur fullstack Laravel, en travaillant à la fois sur le Front-End ainsi que dans la partie du Back-End. J'ai concu et implémente une interface graphique dynamique et intuitive.",
     },
   ];
   return (
@@ -69,25 +71,22 @@ export default function Experience({ onCloseMenu }: ExperienceProps) {
         left: position.x,
         top: position.y,
       }}
-      className="bg-white rounded-2xl p-3 absolute cursor-grab overflow-y-auto flex items-center justify-start w-3/4 lg:w-1/3 md:w-1/2 sm:w-full"
+      className="bg-white rounded-2xl p-3 absolute cursor-grab overflow-y-auto flex items-center justify-start items-start w-3/4 lg:w-1/3 md:w-1/2 sm:w-full"
     >
-      <header className="border-b-1 mb-2 flex flex-row justify-between w-full px-2">
-        <h1 className="text-3xl font-semibold p-2"> Mes Projets </h1>
+      <header className="border-b-1 mb-2 flex flex-row items-center justify-between w-full px-2">
+        <h1 className="text-3xl font-semibold p-2"> Mes éxperiences  </h1>
         <button
           onClick={() => {
             onCloseMenu();
           }}
         >
-          {" "}
-          X{" "}
+          <img src={closed} className="w-7 h-7" />
         </button>
       </header>
       <div className="flex flex-col items-center justify-center w-full gap-2">
-       {
-        lists.map(projet => 
-            <CardXp projet={projet} />
-        )
-       }
+        {lists.map((projet) => (
+          <CardXp projet={projet} />
+        ))}
       </div>
     </div>
   );

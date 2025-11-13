@@ -3,7 +3,7 @@ import DateTime from "../../components/Dash/DateTime";
 import Music from "../../components/Dash/Music";
 import Weather from "../../components/Dash/Weather";
 import NavbarMenu from "../../components/NavbarMenu";
-import wallpaper from "../../images/macOS-Graphic-Light.jpg";
+import wallpaper from "../../images/waves-macos-big-sur-colorful-5k-6016x6016-4992.jpg";
 import Contact from "../../components/Directory/Contact";
 import Profil from "../../components/Directory/Profil";
 import Skill from "../../components/Directory/Skill";
