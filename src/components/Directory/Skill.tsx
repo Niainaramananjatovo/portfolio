@@ -26,7 +26,7 @@ import icon10 from "../../icons/skills/madagascar.png";
 import icon11 from "../../icons/skills/france.png";
 import icon12 from "../../icons/skills/allemagne.png";
 import icon13 from "../../icons/skills/royaume-uni.png";
-import icon14 from "../../icons/skills/japon.png";
+// import icon14 from "../../icons/skills/japon.png";
 
 type Skill = {
   url: string;
@@ -113,11 +113,11 @@ export default function Skill({ onCloseMenu }: SkillProps) {
       niveau: "A2",
     },
 
-    {
-      url: icon14,
-      nom: "Japonais",
-      niveau: "JLTP5",
-    },
+    // {
+    //   url: icon14,
+    //   nom: "Japonais",
+    //   niveau: "JLTP5",
+    // },
   ];
   const onMouseDown = (e: React.MouseEvent) => {
     if (!divRef.current) return;
@@ -152,10 +152,10 @@ export default function Skill({ onCloseMenu }: SkillProps) {
         left: position.x,
         top: position.y,
       }}
-      className="bg-white rounded-2xl p-3 absolute cursor-grab overflow-y-auto flex items-center justify-start lg:w-1/2 h-[500px] md:h-[500px] lg:h-[600px] w-[300px] md:w-2/3 sm:w-2/3"
+      className="bg-white rounded-2xl absolute cursor-grab overflow-y-auto flex items-center justify-start lg:w-1/2 h-[500px] md:h-[500px] lg:h-[600px] w-3/4 md:w-2/3 sm:w-2/3"
     >
       <header className="border-b-1 mb-2 flex flex-row items-center justify-between w-full px-2">
-        <h1 className="text-3xl font-semibold p-2"> Mes compétences </h1>
+        <h1 className="text-3xl font-semibold p-2 font-[Montserrat]"> Mes compétences </h1>
         <button
           onClick={() => {
             onCloseMenu();
@@ -164,13 +164,19 @@ export default function Skill({ onCloseMenu }: SkillProps) {
           <img src={closed} className="w-7 h-7" />
         </button>
       </header>
-      <div className="bg-gray-50/80 p-3 rounded-lg w-full flex flex-col gap-2 mt-2 mb-2">
+      <div className="bg-gray-50/80 p-3 w-full flex flex-col gap-2 mt-2 mb-2">
         <h1 className="text-xl font-semibold">
           Junior Fullstack Web developer{" "}
         </h1>
       </div>
-      <div className="lg:grid lg:grid-col-1 md:grid grid-col-1 gap-1 w-full overflow-y-auto h-[500px]">
-        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+      <div
+        className="lg:grid lg:grid-col-1 md:grid grid-col-1 w-full overflow-y-auto h-[500px]"
+        style={{
+          scrollbarWidth: "thin", 
+          scrollbarColor: '#94a3b8'
+        }}
+      >
+        <div className="bg-gray-50/80 p-3 flex flex-col gap-2 mt-1 mb-1 w-full">
           <h1 className="text-xl w-full"> Front-End </h1>
           <div className="flex flex-wrap gap-4">
             {frontEnd.map((skill) => (
@@ -183,7 +189,7 @@ export default function Skill({ onCloseMenu }: SkillProps) {
             ))}
           </div>
         </div>
-        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3  flex flex-col gap-2 mt-1 mb-1 w-full">
           <h1 className="text-xl w-full"> Back-End </h1>
           <div className="flex flex-wrap gap-4">
             {backEnd.map((skill) => (
@@ -196,7 +202,7 @@ export default function Skill({ onCloseMenu }: SkillProps) {
             ))}
           </div>
         </div>
-        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3 flex flex-col gap-2 mt-1 mb-1 w-full">
           <h1 className="text-xl w-full"> Base de données </h1>
           <div className="flex flex-wrap gap-4">
             {database.map((skill) => (
@@ -209,7 +215,7 @@ export default function Skill({ onCloseMenu }: SkillProps) {
             ))}
           </div>
         </div>
-        <div className="bg-gray-50/80 p-3 rounded-lg flex flex-col gap-2 mt-2 mb-2 w-full">
+        <div className="bg-gray-50/80 p-3 flex flex-col gap-2 mt-1 mb-1 w-full">
           <h1 className="text-xl w-full"> Langues </h1>
           <div className="flex flex-wrap gap-4">
             {langues.map((skill) => (

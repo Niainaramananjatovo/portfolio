@@ -19,7 +19,7 @@ export default function Contact({ onCloseMenu }: ContactProps) {
   const list: Contact[] = [
     {
       plateform: "Git",
-      value: "Niainaramananjatovo@github.com",
+      value: "Niainaramananjatovo",
       url: GitHub,
     },
     {
@@ -44,7 +44,7 @@ export default function Contact({ onCloseMenu }: ContactProps) {
     },
     {
       plateform: "Facebook",
-      value: "Hery Niaina",
+      value: "Hery Niaina / Ni Aina",
       url: Facebook,
     },
   ];
@@ -94,10 +94,10 @@ export default function Contact({ onCloseMenu }: ContactProps) {
         left: position.x,
         top: position.y,
       }}
-      className="bg-white rounded-2xl p-3 absolute cursor-grab"
+      className="bg-white rounded-2xl absolute cursor-grab"
     >
       <header className="border-b-1 mb-2 flex flex-row items-center justify-between w-full px-2">
-        <h1 className="text-3xl font-semibold p-2"> Mes contacts </h1>
+        <h1 className="text-3xl font-semibold p-2 font-[Montserrat]"> Mes contacts </h1>
         <button
           onClick={() => {
             onCloseMenu();

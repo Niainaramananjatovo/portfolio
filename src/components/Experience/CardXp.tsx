@@ -19,7 +19,7 @@ export default function CardXp({ projet }: Cardinterface) {
               size="md"
               color="primary"
               variant="solid"
-              className="text-white bg-black/90 rounded-full w-fit"
+              className="text-white bg-black/90 rounded-full w-fit items-center justify-center flex"
               key={index}
             >
               {projet}

@@ -71,10 +71,13 @@ export default function Experience({ onCloseMenu }: ExperienceProps) {
         left: position.x,
         top: position.y,
       }}
-      className="bg-white rounded-2xl p-3 absolute cursor-grab overflow-y-auto flex items-center justify-start items-start w-3/4 lg:w-1/3 md:w-1/2 sm:w-full"
+      className="bg-white rounded-2xl  absolute cursor-grab overflow-y-auto flex items-center justify-start items-start w-3/4 lg:w-1/3 md:w-1/2 sm:w-3/4"
     >
       <header className="border-b-1 mb-2 flex flex-row items-center justify-between w-full px-2">
-        <h1 className="text-3xl font-semibold p-2"> Mes éxperiences  </h1>
+          <h1 className="text-3xl font-semibold p-2 font-[Montserrat]">
+            {" "}
+            Mes éxperiences{" "}
+          </h1>
         <button
           onClick={() => {
             onCloseMenu();
@@ -83,7 +86,7 @@ export default function Experience({ onCloseMenu }: ExperienceProps) {
           <img src={closed} className="w-7 h-7" />
         </button>
       </header>
-      <div className="flex flex-col items-center justify-center w-full gap-2">
+      <div className="flex flex-col items-center justify-center w-full gap-2 p-1">
         {lists.map((projet) => (
           <CardXp projet={projet} />
         ))}

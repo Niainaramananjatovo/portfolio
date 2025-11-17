@@ -79,10 +79,10 @@ export default function Profil({ onCloseMenu }: ProfilProps) {
         left: position.x,
         top: position.y,
       }}
-      className="bg-white rounded-2xl p-3 absolute cursor-grab h-[620px]  overflow-y-auto flex items-center justify-start"
+      className="bg-white rounded-2xl absolute cursor-grab h-[600px] w-7/8 sm:w-3/4 md:w-1/2 lg:w-1/2 overflow-y-auto flex items-center justify-start"
     >
       <header className="border-b-1 mb-2 flex flex-row items-center justify-between w-full px-2">
-        <h1 className="text-3xl font-semibold p-2"> Mon profil </h1>
+        <h1 className="text-3xl font-semibold p-2 font-[Montserrat]"> Mon profil </h1>
         <button
           onClick={() => {
             onCloseMenu();

@@ -46,8 +46,8 @@ export default function Weather() {
   useEffect(() => fetchCurrentWeather(), []);
   return (
     <div className="text-white rounded-2xl backdrop-blur-lg bg-white/20 p-4 text-center md:w-1/3 lg:1/3 justify-self-end">
-      <h1 className="text-6xl font-bold">
-        {weather? weather?.current.temp_c + "°C" : "5°C"}
+      <h1 className="text-5xl md:text-4xl sm:text-5xl font-bold">
+        {weather? weather?.current.temp_c + "°C" : "28.4°C"}
       </h1>
       <span className="flex flex-row items-center justify-center mt-1 mr-1">
         <MapPinIcon className="w-5 h-5" />
